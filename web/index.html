@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="social_network">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>social_network</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    const serviceWorkerVersion = null;
+  </script>
+  <!-- Import Firebase modular SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAQR6KXBNMNqqyhWyQ5hRzhx6GcX5OrTGc",
+      authDomain: "socialnetwork-40154.firebaseapp.com",
+      databaseURL: "https://socialnetwork-40154-default-rtdb.firebaseio.com",
+      projectId: "socialnetwork-40154",
+      storageBucket: "socialnetwork-40154.appspot.com",
+      messagingSenderId: "197869691366",
+      appId: "1:197869691366:web:bb1479137da79d9fe13627",
+      measurementId: "G-X18KL64NPG"
+    };
+
+    // Initialize Firebase
+/*
+    const firebaseApp = initializeApp(firebaseConfig);
+*/
+    const analytics = getAnalytics(firebaseApp);
+    const auth = getAuth(firebaseApp);
+    const firestore = getFirestore(firebaseApp);
+  </script>
+  <!-- Include the Flutter initialization script -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+<script>
+  window.addEventListener('load', function(ev) {
+    // Download main.dart.js
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: {
+        serviceWorkerVersion: serviceWorkerVersion,
+      },
+      onEntrypointLoaded: function(engineInitializer) {
+        engineInitializer.initializeEngine().then(function(appRunner) {
+          appRunner.runApp();
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>

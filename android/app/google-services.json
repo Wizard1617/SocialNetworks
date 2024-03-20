@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "197869691366",
+    "firebase_url": "https://socialnetwork-40154-default-rtdb.firebaseio.com",
+    "project_id": "socialnetwork-40154",
+    "storage_bucket": "socialnetwork-40154.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197869691366:android:23967a722ba7fbe9e13627",
+        "android_client_info": {
+          "package_name": "com.example.social_network"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb_npLy6tVCrYjxovxDSv1o_SAbUQEtzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
